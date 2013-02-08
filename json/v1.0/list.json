@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "properties": {
+        "items": {
+            "type":"array",
+            "required": true
+
+        },
+        "item_count": {
+            "type":"number",
+            "required": true
+
+        },
+        "links": {
+            "minItems": 3,
+            "type": "array",
+            "required": true,
+            "items": { "extends": {"$ref": "http://json-schema.org/links#"} }
+        }
+
+    }
+}
