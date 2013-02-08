@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "title": "column",
+    "name": "column",
+
+    "properties": {
+        "id":{
+            "description": "flags the column as an identifier",
+            "type": "boolean",
+            "default": false
+        },
+        "key":{
+            "description": "the key used to retrieve the data",
+            "type": "string",
+            "required": true
+        },
+        "title":{
+            "description": "the column heading",
+            "type": "string"
+        }
+    },
+    "links":[]
+}

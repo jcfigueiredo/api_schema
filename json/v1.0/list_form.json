@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "title": "list_form",
+    "name": "list_form",
+
+    "properties": {
+        "title": {
+            "description": "the heading of the form",
+            "type": "string"
+        },
+        "columns": {
+            "description": "present columns and it's headings",
+            "type":"array",
+            "properties":{"$ref":"./column.json#properties"}
+        }
+    },
+    "links":[]
+}
